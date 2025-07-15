@@ -1,7 +1,9 @@
 # Global Plastic Production Visualization (1950–2019)
 
-This interactive data visualization explores the dramatic growth of global plastic production from 1950 to 2019. Built with D3.js, it uses scroll-driven storytelling and creative visual metaphors to help users grasp the scale of plastic production over time.
 ![Discription](main.gif)
+
+This interactive data visualization explores the dramatic growth of global plastic production from 1950 to 2019. Built with D3.js, it uses scroll-driven storytelling and creative visual metaphors to help users grasp the scale of plastic production over time.
+
 ![Discription](barchart.gif)
 
 ## Overview
