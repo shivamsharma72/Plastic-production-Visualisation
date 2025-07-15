@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Plastic Production Visualization</title>
+    <link rel="stylesheet" href="figure-1.css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+  </head>
+  <body>
+    <div id="intro" class="section">
+      <h1>How Much Plastic Have We Produced?</h1>
+      <p class="subtitle">A Journey Through Time: 1950-2019</p>
+    </div>
+
+    <div id="scroll-container">
+      <div id="sticky-graphic">
+        <div id="vis"></div>
+        <div id="chart-container">
+          <div id="bottle-chart" class="chart"></div>
+          <div id="bar-chart" class="chart"></div>
+        </div>
+      </div>
+
+      <div id="info-panel">
+        <h3 class="year"></h3>
+        <div class="stats-container"></div>
+      </div>
+      <div id="year-display"></div>
+      <div id="sections">
+        <div class="step" data-step="1">
+          <div class="step-content">
+            <h2>Global Plastic Production</h2>
+            <p>
+              Scroll to explore how plastic production has grown since 1950.
+            </p>
+          </div>
+        </div>
+        <div class="step" data-step="1.5">
+          <div class="step-content">
+            <h2>Our Reference Scale</h2>
+            <div class="explanation-content">
+              <p>
+                To help you understand these massive numbers, we're using the
+                Eiffel Tower as our reference point.
+              </p>
+
+              <div class="calculation-note">
+                <p>
+                  We calculated that if the Eiffel Tower was hollow and filled
+                  with plastic:
+                </p>
+                <ul>
+                  <li>Using plastic density of 1.38 kg/m³</li>
+                  <li>
+                    It would hold approximately 2 million tonnes of plastic
+                  </li>
+                </ul>
+              </div>
+
+              <p class="note">
+                This helps us visualize the enormous scale of global plastic
+                production through a familiar landmark.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="step" data-step="2">
+          <div class="step-content">
+            <h2>Eiffel Tower Volume</h2>
+            <p>
+              The Eiffel Tower is hollow, but if filled with plastic, its weight
+              would be approximately
+              <span class="highlight">2,000,000 tonnes</span>.
+              <p>Each bottle represents 1 Eiffel Tower </p>
+            </p>
+          </div>
+        </div> -->
+
+        <div class="step" data-step="3">
+          <div class="step-content">
+            <h2>Starting Point: 1950</h2>
+            <p>
+              Let's begin in 1950, when global plastic production was just
+              beginning. Each bottle represents a portion of the total plastic
+              produced.
+            </p>
+          </div>
+        </div>
+
+        <div class="step" data-step="4">
+          <div class="step-content">
+            <h2>Growing Production</h2>
+            <p>
+              Watch as plastic production grows from 1950 to 2019. The pyramid
+              of bottles grows to show the dramatic increase in production.
+            </p>
+          </div>
+        </div>
+
+        <div class="step" data-step="5">
+          <div class="step-content">
+            <h2>Present Day: 2019</h2>
+            <p>
+              By 2019, global plastic production had reached staggering levels.
+              The full pyramid shows the cumulative production over seven
+              decades.
+            </p>
+          </div>
+        </div>
+
+        <div class="step" data-step="6">
+          <div class="step-content">
+            <h2>The Complete Timeline</h2>
+            <p>
+              Here's the full timeline of plastic production from 1950 to 2019,
+              showing the dramatic increase over seven decades.
+            </p>
+          </div>
+        </div>
+
+        <div class="step buffer" data-step="7" style="height: 100vh"></div>
+      </div>
+    </div>
+
+    <div id="controls">
+      <select id="year-select">
+        <option value="">Select Year</option>
+      </select>
+      <div id="play-controls">
+        <button id="play-pause">Play</button>
+        <button id="reset">Reset</button>
+      </div>
+    </div>
+
+    <script src="figure-1.js"></script>
+  </body>
+</html>
